@@ -1,1 +1,197 @@
-/* Add you CSS here */
+/* General layout styles */
+body {
+  margin: 0;
+  font-family: 'Poppins', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Fun yet professional font */
+  background-color: #e0f7fa;
+  color: #333;
+  line-height: 1.6;
+  padding-top: 60px; /* Adjust based on navbar height */
+}
+
+/* Header layout */
+header {
+  background-color: white;
+  padding: 40px 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.header-content {
+  max-width: 1000px;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 30px;
+  text-align: left;
+  padding: 20px;
+}
+
+.profile-photo {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  border: 3px solid #0d47a1;
+}
+
+.header-text h1 {
+  color: #0d47a1;
+  font-size: 2.5rem;
+  margin: 0;
+}
+
+.header-text h2 {
+  color: #607d8b;
+  margin-top: 0.4em;
+  font-size: 1.6rem;
+}
+
+.header-text p {
+  margin-top: 1em;
+  max-width: 600px;
+}
+
+/* Navigation Bar */
+.navbar {
+  background-color: #0d47a1; /* Professional blue */
+  color: white;
+  padding: 10px 20px;
+  position: fixed; /* Fix the navbar at the top */
+  top: 0;
+  width: 100%;
+  z-index: 1000; /* Ensure it stays above other elements */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  justify-content: center; /* Center the navigation links */
+  margin: 0;
+  padding: 0;
+  gap: 20px; /* Add space between links */
+}
+
+.navbar li {
+  display: inline;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1rem;
+  transition: color 0.3s ease; /* Smooth color transition on hover */
+}
+
+.navbar a:hover {
+  color: #e0f7fa; /* Light blue hover effect */
+}
+
+/* Main content */
+main {
+  max-width: 1000px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+section {
+  margin-bottom: 40px;
+}
+
+.skills h3,
+.projects h3 {
+  font-size: 1.8rem;
+  color: #444;
+  margin-bottom: 1rem;
+}
+
+/* Skills list */
+.skills {
+  text-align: center; /* Center text */
+}
+
+.skills ul {
+  list-style-type: none;
+  padding: 0;
+  display: inline-block; /* Center the list */
+  text-align: left; /* Keep list items aligned to the left */
+}
+
+.skills li {
+  margin: 10px 0;
+  font-weight: bold;
+  display: flex;
+  align-items: center; /* Align icons and text vertically */
+  gap: 10px; /* Add space between the icon and text */
+}
+
+.skill-icon {
+  width: 24px; /* Set a consistent size for icons */
+  height: 24px;
+}
+
+/* Projects grid */
+.projects {
+  text-align: center; /* Center text */
+}
+
+.project-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center; /* Center the project cards */
+}
+
+.project-card {
+  background-color: white;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  flex: 1 1 300px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+}
+
+.project-card h4 {
+  margin-top: 0;
+  color: #0d47a1;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #0d47a1;
+  color: white;
+  margin-top: 60px;
+  font-family: 'Poppins', sans-serif; /* Match the fun yet professional font */
+}
+
+/* About section */
+.about {
+  margin-bottom: 40px;
+  text-align: center; /* Ensure all text in the section is centered */
+}
+
+.about h3 {
+  font-size: 1.8rem;
+  color: #444;
+  margin-bottom: 1rem;
+}
+
+.about p {
+  font-size: 1.1rem; /* Slightly larger font for readability */
+  max-width: 700px;
+  margin: 0 auto; /* Center the paragraph within the section */
+}
+
+/* Contact section */
+.contact {
+  text-align: center; /* Center all text in the contact section */
+}
+
+.contact p {
+  margin: 0 auto; /* Center the paragraph */
+  max-width: 600px; /* Limit the width for better readability */
+}
