@@ -1,8 +1,11 @@
+/* Import Montserrat for headers */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+
 /* General layout styles */
 body {
   margin: 0;
   font-family: 'Poppins', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Fun yet professional font */
-  background-color: #e0f7fa;
+  background: linear-gradient(135deg, #e0f7fa 0%, #ffe0f7 100%);
   color: #333;
   line-height: 1.6;
   padding-top: 60px; /* Adjust based on navbar height */
@@ -10,7 +13,7 @@ body {
 
 /* Header layout */
 header {
-  background-color: white;
+  background: linear-gradient(120deg, #fffde4 0%, #f7e8ff 100%);
   padding: 40px 20px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
@@ -32,17 +35,23 @@ header {
   border-radius: 50%;
   object-fit: cover;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
-  border: 3px solid #0d47a1;
+  border: 3px solid #f06292;
+}
+
+.header-text h1,
+.header-text h2 {
+  font-family: 'Montserrat', 'Poppins', sans-serif;
 }
 
 .header-text h1 {
-  color: #0d47a1;
+  color: #8e24aa;
   font-size: 2.5rem;
   margin: 0;
+  letter-spacing: 2px;
 }
 
 .header-text h2 {
-  color: #607d8b;
+  color: #039be5;
   margin-top: 0.4em;
   font-size: 1.6rem;
 }
@@ -50,11 +59,12 @@ header {
 .header-text p {
   margin-top: 1em;
   max-width: 600px;
+  font-family: 'Poppins', sans-serif;
 }
 
 /* Navigation Bar */
 .navbar {
-  background-color: #0d47a1; /* Professional blue */
+  background: linear-gradient(90deg, #0d47a1 60%, #f06292 100%);
   color: white;
   padding: 10px 20px;
   position: fixed; /* Fix the navbar at the top */
@@ -86,7 +96,7 @@ header {
 }
 
 .navbar a:hover {
-  color: #e0f7fa; /* Light blue hover effect */
+  color: #ffd54f; /* Light blue hover effect */
 }
 
 /* Main content */
@@ -98,13 +108,21 @@ main {
 
 section {
   margin-bottom: 40px;
+  border-radius: 12px;
+  background: rgba(255,255,255,0.85);
+  box-shadow: 0 2px 8px rgba(240,98,146,0.07);
+  padding: 20px 0;
 }
 
 .skills h3,
-.projects h3 {
+.projects h3,
+.about h3,
+.contact h3 {
   font-size: 1.8rem;
-  color: #444;
+  color: #8e24aa;
   margin-bottom: 1rem;
+  font-family: 'Montserrat', 'Poppins', sans-serif;
+  letter-spacing: 1px;
 }
 
 /* Skills list */
@@ -145,24 +163,32 @@ section {
 }
 
 .project-card {
-  background-color: white;
+  background: linear-gradient(135deg, #fffde4 60%, #fce4ec 100%);
   padding: 20px;
-  border: 1px solid #ccc;
-  border-radius: 10px;
+  border: 2px solid #f06292;
+  border-radius: 16px;
   flex: 1 1 300px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 4px 12px rgba(142,36,170,0.08);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.project-card:hover {
+  transform: translateY(-6px) scale(1.03);
+  box-shadow: 0 8px 24px rgba(3,155,229,0.15);
+  border-color: #039be5;
 }
 
 .project-card h4 {
   margin-top: 0;
-  color: #0d47a1;
+  color: #039be5;
+  font-family: 'Montserrat', 'Poppins', sans-serif;
 }
 
 /* Footer */
 footer {
   text-align: center;
   padding: 20px;
-  background-color: #0d47a1;
+  background: linear-gradient(90deg, #0d47a1 60%, #f06292 100%);
   color: white;
   margin-top: 60px;
   font-family: 'Poppins', sans-serif; /* Match the fun yet professional font */
@@ -184,6 +210,8 @@ footer {
   font-size: 1.1rem; /* Slightly larger font for readability */
   max-width: 700px;
   margin: 0 auto; /* Center the paragraph within the section */
+  font-family: 'Poppins', sans-serif;
+  color: #6d4c41;
 }
 
 /* Contact section */
@@ -194,4 +222,6 @@ footer {
 .contact p {
   margin: 0 auto; /* Center the paragraph */
   max-width: 600px; /* Limit the width for better readability */
+  font-family: 'Poppins', sans-serif;
+  color: #039be5;
 }
