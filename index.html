@@ -86,5 +86,29 @@
   <footer>
     <p>© 2025 Katie Dennis</p>
   </footer>
+
+    <!-- Add script to auto-detect language and adjust layout -->
+  <script>
+    function adjustLayoutForLanguage() {
+      const html = document.documentElement;
+      const bootstrapRTL = document.getElementById('bootstrap-rtl');
+
+      // Check if the language is right-to-left
+      if (['ar', 'he', 'fa', 'ur'].includes(html.lang)) {
+        bootstrapRTL.disabled = false; // Enable RTL styles
+        document.body.dir = 'rtl'; // Set text direction to RTL
+      } else {
+        bootstrapRTL.disabled = true; // Disable RTL styles
+        document.body.dir = 'ltr'; // Set text direction to LTR
+      }
+    }
+
+    // Observe changes to the `lang` attribute of the <html> element
+    const langObserver = new MutationObserver(() => adjustLayoutForLanguage());
+    langObserver.observe(document.documentElement, { attributes: true, attributeFilter: ['lang'] });
+
+    // Initial layout adjustment
+    adjustLayoutForLanguage();
+  </script>
 </body>
 </html>
