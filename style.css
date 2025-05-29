@@ -348,10 +348,10 @@ footer {
 .contact-form {
   max-width: 480px;
   margin: 0 auto;
-  background: rgba(255,255,255,0.98);
-  padding: 36px 28px 28px 28px;
-  border-radius: 18px;
-  box-shadow: 0 4px 18px rgba(142,36,170,0.10);
+  background: #fff;
+  padding: 32px 20px 24px 20px;
+  border-radius: 14px;
+  box-shadow: 0 2px 12px rgba(142,36,170,0.08);
   border: 1.5px solid #e1bee7;
   display: flex;
   flex-direction: column;
@@ -364,6 +364,8 @@ footer {
   color: #8e24aa;
   font-family: 'Montserrat', 'Poppins', sans-serif;
   margin-bottom: 4px;
+  font-size: 1rem;
+  letter-spacing: 0.2px;
 }
 
 .contact-form .form-label[for="message"] {
@@ -384,6 +386,9 @@ footer {
   margin-bottom: 16px;
   transition: border-color 0.2s, box-shadow 0.2s;
   background: #fafaff;
+  color: #333;
+  font-family: 'Poppins', 'Montserrat', sans-serif;
+  box-shadow: none;
 }
 
 .contact-form .form-control:focus {
@@ -393,7 +398,7 @@ footer {
 }
 
 .contact-form textarea.form-control {
-  min-height: 130px;
+  min-height: 110px;
   resize: vertical;
   background: linear-gradient(120deg, #f3e5f5 0%, #e3f2fd 100%);
   border: 1.5px solid #bdbdbd;
@@ -423,6 +428,7 @@ footer {
   box-shadow: 0 2px 8px rgba(3,155,229,0.08);
   width: 100%;
   letter-spacing: 1px;
+  color: #fff;
 }
 
 .contact-form .btn-primary:hover, .contact-form .btn-primary:focus {
@@ -436,7 +442,7 @@ footer {
     border-radius: 12px;
   }
   .contact-form {
-    padding: 20px 8px 16px 8px;
+    padding: 16px 4px 12px 4px;
     border-radius: 10px;
   }
 }
