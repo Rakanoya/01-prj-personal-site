@@ -36,7 +36,13 @@
     <section class="about" id="about">
       <h3>About Me</h3>
       <p>
-        Hello, I'm Katie, a computer science student at ASU. I have an interest in technology and programming, I know languages such as Java, Python, C, HTML, Assembly, and CSS. I enjoy writing and learning new things. 
+        Hello, I'm Katie, a computer science student at Appalachian State University. I have an interest in technology and programming, I know languages such as Java, Python, C, HTML, Assembly, and CSS. I have a particular interest in creating coding projects such as websites and games. I participated in the Global Career Accelerator program where I worked on projects that enhanced my skills. 
+      </p>
+      <p>
+        When I am not coding, you can find me ice skating, reading, writing, or doing something fun. I enjoy learning about new technologies and exploring new ideas. 
+      </p>
+      <p>
+        I am looking for an internship or entry level job in the tech industry. I am open to new oppritunities and learn more skills through work experience. 
       </p>
     </section>
 
@@ -56,6 +62,18 @@
           <img src="img/commit.png" alt="GitHub logo, showing a cat silhouette inside a circle" class="skill-icon"> GitHub
         </li>
         <li>
+          <img src="img/arrow.png" alt="C language icon, stylized C letter or arrow" class="skill-icon"> C
+        </li>
+        <li>
+          <img src="img/laptop.jpg" alt="Assembly language icon, stylized laptop or code" class="skill-icon"> Assembly Language
+        </li>
+        <li>
+          <img src="img/writing.png" alt="Communication icon, pen and paper symbolizing communication skills" class="skill-icon"> Communication
+        </li>
+        <li>
+          <img src="img/hero-bg.jpg" alt="Creativity icon, abstract colorful background" class="skill-icon"> Creativity
+        </li>
+        <li>
           <img src="img/writing.png" alt="Writing icon, showing a pen and paper symbolizing writing skills" class="skill-icon"> Writing
         </li>
       </ul>
@@ -67,21 +85,55 @@
     <article class="project-card">
       <h4>Portfolio Website</h4>
       <p>A personal website to showcase my projects, built with HTML and CSS.</p>
+      <div class="project-tech-divider"><span>Technologies Used</span></div>
+      <ul class="project-tech">
+        <li><img src="img/html.png" alt="HTML & CSS icon" class="skill-icon"> HTML & CSS</li>
+        <li><img src="img/commit.png" alt="GitHub icon" class="skill-icon"> GitHub</li>
+        <li><img src="img/laptop.jpg" alt="Codespaces icon" class="skill-icon"> Codespaces</li>
+      </ul>
     </article>
     <article class="project-card">
       <h4><a href="https://rakanoya.github.io/03-prj-intel-localization/" target="_blank">Intel Sustainability Timeline</a></h4>
       <p>An interactive Flexbox-based webpage highlighting Intel’s key sustainability milestones using HTML and CSS.</p>
+      <div class="project-tech-divider"><span>Technologies Used</span></div>
+      <ul class="project-tech">
+        <li><img src="img/html.png" alt="HTML & CSS icon" class="skill-icon"> HTML & CSS</li>
+        <li><img src="img/commit.png" alt="GitHub icon" class="skill-icon"> GitHub</li>
+        <li><img src="img/laptop.jpg" alt="Codespaces icon" class="skill-icon"> Codespaces</li>
+      </ul>
     </article>
     <article class="project-card">
       <h4><a href="https://rakanoya.github.io/05-cw-game-water-quest/" target="_blank">Water Quest Game</a></h4>
       <p>A fun and educational water conservation game created with HTML, CSS, and JavaScript.</p>
+      <div class="project-tech-divider"><span>Technologies Used</span></div>
+      <ul class="project-tech">
+        <li><img src="img/html.png" alt="HTML & CSS icon" class="skill-icon"> HTML & CSS</li>
+        <li><img src="img/java.png" alt="JavaScript icon" class="skill-icon"> JavaScript</li>
+        <li><img src="img/commit.png" alt="GitHub icon" class="skill-icon"> GitHub</li>
+        <li><img src="img/laptop.jpg" alt="Codespaces icon" class="skill-icon"> Codespaces</li>
+      </ul>
     </article>
   </div>
 </section>
 
     <section class="contact" id="contact">
       <h3>Contact</h3>
-      <p>Connect with me on <a href="https://www.linkedin.com/in/kaitlyn-dennis-646b89363/" target="_blank">LinkedIn</a>.</p>
+      <p>Connect with me on <a href="https://www.linkedin.com/in/kaitlyn-dennis-646b89363/" target="_blank">LinkedIn</a> or fill out the form below.</p>
+      <form class="contact-form" action="#" method="post" aria-label="Contact form">
+        <div class="mb-3">
+          <label for="name" class="form-label">Name</label>
+          <input type="text" class="form-control" id="name" name="name" required aria-required="true" autocomplete="name">
+        </div>
+        <div class="mb-3">
+          <label for="email" class="form-label">Email</label>
+          <input type="email" class="form-control" id="email" name="email" required aria-required="true" autocomplete="email">
+        </div>
+        <div class="mb-3">
+          <label for="message" class="form-label">Message</label>
+          <textarea class="form-control" id="message" name="message" rows="4" required aria-required="true"></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Send Message</button>
+      </form>
     </section>
   </main>
 
