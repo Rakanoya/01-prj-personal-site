@@ -287,6 +287,18 @@ section + section {
   color: #8e24aa;
 }
 
+/* Project image styling */
+.project-image {
+  display: block;
+  max-width: 100%;
+  width: 320px;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 12px;
+  margin: 18px auto 0 auto;
+  box-shadow: 0 2px 12px rgba(20,20,40,0.10);
+}
+
 /* Footer */
 footer {
   text-align: center;
